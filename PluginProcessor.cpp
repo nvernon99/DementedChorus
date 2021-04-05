@@ -180,9 +180,9 @@ void DementedChorusAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
     auto context = juce::dsp::ProcessContextReplacing<float>(audioBlock);
     auto context2 = juce::dsp::ProcessContextReplacing<float>(audioBlock);
     chorus1.process(context);
-    chorus2.process(context2);
-    gain.process(context);
-    gain.process(context2);
+    chorus2.process(context);
+    //gain.process(context);
+    //gain.process(context2);
 
 
 }
